@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+.main-container {
+  width: 55%;
+  overflow: hidden;
+  /* border-radius: 1rem; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title-container {
+  padding: 5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.title {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.subtitle {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.text {
+  font-size: 2rem;
+}
+
+.subscription {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.subscription-bill {
+  font-size: 5rem;
+}
+
+.monthly {
+  font-size: 1.5rem;
+}
+
+.subscription-content {
+  font-size: 1.5rem;
+  width: 78%;
+}
+
+.custom-btn {
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+}
+
+.custom-col {
+  max-height: 50%;
+}
+
+@media only screen and (max-width: 990px) {
+  .title-container {
+    padding: 2.8rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 500px) {
+  .main-container {
+    width: 90%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .title-container {
+    padding: 2rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+  .subtitle {
+    font-size: 1.8rem;
+  }
+
+  .text {
+    font-size: 1.2rem;
+  }
+
+  .subscription {
+    font-size: 1.8rem;
   }
 }

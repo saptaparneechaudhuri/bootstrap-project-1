@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500&display=swap');
+
+
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+$primary: hsl(179, 62%, 43%);
+$secondary: hsl(71, 73%, 54%);
+$light: hsl(204, 43%, 93%);
+$dark: hsl(218, 22%, 67%);
+
+
+
+$font-family-base: 'Karla',sans-serif;
+$font-size-root: 62.5%;
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+// Create your own map
+$custom-colors: (
+    "cyan-light": hsl(179, 61%, 50%)
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+
+
+
+
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
+#root {
+    width: 100vw;
+    height: 100vh;
+}
